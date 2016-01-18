@@ -10,6 +10,7 @@
         "twig/twig": "^1.23",
         "symfony/proxy-manager-bridge": "^3.0",
         "doctrine/orm": "^2.5",
+        "symfony/http-foundation": "^3.0",
         "symfony/security": "^3.0"
     },
     "authors": [

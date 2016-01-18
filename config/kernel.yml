@@ -18,6 +18,7 @@ services:
   http_kernel:
     class: Symfony\Component\HttpKernel\HttpKernel
     arguments: ["@dispatcher", "@resolver", "@request_stack"]
+
   response:
     class: Symfony\Component\HttpFoundation\Response
     factory: [ "@http_kernel", handle]

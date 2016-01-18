@@ -15,4 +15,5 @@ services:
 
   controller.page:
     class: App\Controller\PageController
+#    parent: controller.base_web
     arguments: ["@templating.twig", "@repository.page"]

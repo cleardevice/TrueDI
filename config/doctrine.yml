@@ -1,5 +1,6 @@
 parameters:
   doctrine.driver: "pdo_pgsql"
+  doctrine.host: "pgsql"
   doctrine.user: "postgres"
   doctrine.password: "postgres"
   doctrine.dbname: "true_di"
@@ -19,6 +20,7 @@ services:
     arguments:
       conn:
         driver: "%doctrine.driver%"
+        host: "%doctrine.host%"
         user: "%doctrine.user%"
         password: "%doctrine.password%"
         dbname: "%doctrine.dbname%"

@@ -6,6 +6,9 @@ services:
     class: Symfony\Component\Routing\RouteCollection
     tags:
       - { name: route_collection }
+#    calls:
+#      - [ add, ["route_home", "@route.home"] ]
+#      - [ add, ["route_page", "@route.page"] ]
   router.request_context:
       class: Symfony\Component\Routing\RequestContext
       calls:

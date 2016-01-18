@@ -1,5 +1,5 @@
 <?php
-
+date_default_timezone_set('UTC');
 require_once('../vendor/autoload.php');
 
 $container = TrueContainer::buildContainer(dirname(__DIR__));

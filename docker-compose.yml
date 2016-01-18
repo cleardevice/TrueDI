@@ -1,0 +1,14 @@
+pgsql:
+  image: postgres:latest
+  environment:
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_DB: true_di
+
+web:
+  build: docker/web
+  ports:
+    - 8181:80
+  volumes:
+    - .:/usr/src/myapp
+  links:
+    - pgsql
